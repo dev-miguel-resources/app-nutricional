@@ -8,7 +8,7 @@ import { getApiUrl } from "./../constants";
 const SearchFoodDishes = () => {
   const [hits, setHits] = useState();
 
-  const getData = (query) => { 
+  const getData = (query) => {
     query &&
       fetch(getApiUrl(query))
         .then((data) => data.json())
@@ -29,6 +29,6 @@ const SearchFoodDishes = () => {
   );
 };
 
-SearchFoodDishes.displayName = 'SearchFoodDishes';
+SearchFoodDishes.displayName = "SearchFoodDishes";
 
 export default SearchFoodDishes;
